@@ -33,6 +33,7 @@ public class main {
 
             // Change the integer to char
             // Get the choice
+
             char choice = sc.next().charAt(0);
 
             // use switch case      
@@ -64,5 +65,8 @@ public class main {
                     break;
             }
         }
+
+        // Prevent the memory leakage
+        sc.close();
     }
 }
